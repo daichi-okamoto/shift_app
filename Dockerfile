@@ -10,6 +10,13 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
   && apt-get update -qq \
   && apt-get install -y nodejs yarn
 
+  # Pythonをインストール
+RUN apt-get update -qq \
+&& apt-get install -y python3 python3-pip
+
+# OR-Toolsをインストール
+RUN pip3 install ortools
+
 # 作業ディレクトリを指定
 WORKDIR /shift-app
 

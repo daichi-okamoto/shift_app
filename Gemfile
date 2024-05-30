@@ -49,8 +49,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # tailwindcss daisyui
-gem 'cssbundling-rails'
-gem 'jsbundling-rails'
+gem 'tailwindcss-rails'
 
 
 group :development, :test do

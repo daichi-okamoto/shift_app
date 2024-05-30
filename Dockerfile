@@ -3,6 +3,9 @@ FROM ruby:3.1.2
 ENV TZ Asia/Tokyo
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs && apt-get install -y vim
 
+# ベースイメージの指定（プラットフォームを明示的に指定）
+FROM --platform=linux/amd64 ruby:3.1.2
+
 # Install yarn
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
   && wget --quiet -O - /tmp/pubkey.gpg https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \

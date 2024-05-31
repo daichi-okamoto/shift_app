@@ -118,6 +118,10 @@
     "build": "npx tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./public/output.css --watch",
     "build:css": "npx tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./public/output.css"
   },
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"

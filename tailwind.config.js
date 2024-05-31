@@ -12,11 +12,12 @@ module.exports = {
       'black': '#777777',
       'white': '#ffffff',
       'gray': '#EFEFEF',
-      'blue-focus': '#4776e6;',
+      'blue-focus': '#4776e6',
     },
     extend: {
       borderWidth: {
         '1': '1px',
+      },
     },
     fontFamily: {
       'reddit': ["Reddit Mono"]
@@ -34,5 +35,4 @@ module.exports = {
   plugins: [
     require('daisyui'),
   ],
-  },
-}
+};
